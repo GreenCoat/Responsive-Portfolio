@@ -4,6 +4,10 @@ header {
 	height: 64px;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 #logo {
 	font-family: Georgia, Times, 'Times New Roman', serif;
 	font-weight: bold;
@@ -39,10 +43,12 @@ nav div:nth-child(2) {
 }
 
 .wrapper {
-	margin: 10px 34px 30px;
+	margin: 10px 30px 30px;
 }
 
 .contact {
+	height: 62px;
+	width: 62px;
 	margin: 2px;
 	display: inline-block;
 }
@@ -160,4 +166,71 @@ footer {
 	padding: 20px;
 	border-top: 5px solid #4aaaa5;
 	text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
+}
+
+/* Additional Screen Sizes */
+
+/* Width at 320px and below */
+@media screen and (max-width: 640px) {
+  body {
+    background-color: #333;
+  }
+
+  .wrapper {
+    /* Box-model */
+    width: 100%;
+    padding: 20px;
+  }
+
+  #main-content,
+  #sidebar {
+    width: 100%;
+  }
+
+  #sidebar {
+    margin-top: 40px;
+  }
 }
